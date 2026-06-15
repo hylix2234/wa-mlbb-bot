@@ -1,0 +1,16 @@
+{
+  "name": "wa-mlbb-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp Bot Jualan MLBB - Diamond, WDP, Starlight",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "pino": "^9.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
