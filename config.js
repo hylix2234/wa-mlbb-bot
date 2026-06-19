@@ -13,7 +13,7 @@ export const CONFIG = {
   NO_ADMIN: "6285723792958",
 
   // Prefix perintah
-  PREFIX: "!",
+  PREFIX: ["!", "#", "."],
 
   // Pesan sambutan saat pertama kontak
   WELCOME: true,
@@ -47,17 +47,16 @@ export const HARGA_DIAMOND = [
 //  DAFTAR HARGA WEEKLY DIAMOND PASS (WDP)
 // ============================================================
 export const HARGA_WDP = [
-  { paket: "Weekly Diamond Pass x1", bonus: "+25 Diamond/hari selama 7 hari", harga: 17_000 },
-  { paket: "Weekly Diamond Pass x2", bonus: "+50 Diamond/hari selama 7 hari", harga: 33_000 },
+  { paket: "Weekly Diamond Pass x1", harga: 17_000 },
 ];
 
 // ============================================================
 //  DAFTAR HARGA STARLIGHT
 // ============================================================
 export const HARGA_STARLIGHT = [
-  { paket: "Starlight Member",         durasi: "1 Bulan",  harga: 30_000 },
-  { paket: "Starlight Member Spesial", durasi: "1 Bulan",  harga: 50_000 },
-  { paket: "Starlight Member + Badge", durasi: "1 Bulan",  harga: 55_000 },
+  { paket: "Starlight Member",          harga: 30_000 },
+  { paket: "Starlight Member Spesial",  harga: 50_000 },
+  { paket: "Starlight Member + Badge",  harga: 55_000 },
 ];
 
 // ============================================================
@@ -65,27 +64,10 @@ export const HARGA_STARLIGHT = [
 // ============================================================
 export const PAYMENT = [
   {
-    kategori: "💳 Transfer Bank",
-    metode: [
-      { nama: "BCA",     norek: "1234567890",  an: "Nama Kamu" },
-      { nama: "BRI",     norek: "0987654321",  an: "Nama Kamu" },
-      { nama: "Mandiri", norek: "1357924680",  an: "Nama Kamu" },
-    ],
-  },
-  {
     kategori: "📱 E-Wallet",
     metode: [
-      { nama: "Dana",    norek: "08123456789", an: "Nama Kamu" },
-      { nama: "OVO",     norek: "08123456789", an: "Nama Kamu" },
-      { nama: "GoPay",   norek: "08123456789", an: "Nama Kamu" },
-      { nama: "ShopeePay", norek: "08123456789", an: "Nama Kamu" },
-    ],
-  },
-  {
-    kategori: "🏪 Gerai / QRIS",
-    metode: [
-      { nama: "QRIS",    norek: "—",           an: "Scan QR saat checkout" },
-      { nama: "Alfamart / Indomaret", norek: "—", an: "Kode bayar dikirim setelah order" },
-    ],
+      { nama: "Dana",    norek: "085723792958", an: "Haerul Anam" },
+      { nama: "Seabank",    norek: "901974115634", an: "Haerul Anam" },
+   ],
   },
 ];

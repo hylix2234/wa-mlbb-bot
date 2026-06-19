@@ -1,6 +1,7 @@
 import { CONFIG } from "../config.js";
 
-const { PREFIX, NAMA_TOKO, NO_ADMIN } = CONFIG;
+const PREFIX = "!";
+const { NAMA_TOKO, NO_ADMIN } = CONFIG;
 
 export function getMenu(senderName) {
   return (
@@ -30,17 +31,12 @@ export function getCaraOrder() {
     `2️⃣ Kirim format order ke admin:\n\n` +
     `*Format Order:*\n` +
     `\`\`\`\n` +
-    `Nama   : [nama akun MLBB]\n` +
-    `ID     : [ID MLBB kamu]\n` +
-    `Server : [Server / Zone]\n` +
-    `Produk : [Diamond/WDP/Starlight]\n` +
-    `Jumlah : [misal: 86 Diamond]\n` +
-    `Payment: [metode bayar]\n` +
+    `ID+Server: [ID MLBB+server]\n` +
+    `Produk   : [Diamond/WDP/Starlight]\n` +
+    `Payment  : [metode bayar]\n` +
     `\`\`\`\n\n` +
-    `3️⃣ Admin konfirmasi & kirim total harga\n` +
-    `4️⃣ Lakukan pembayaran\n` +
-    `5️⃣ Kirim bukti transfer ke admin\n` +
-    `6️⃣ Diamond / item masuk ke akun kamu ✅\n\n` +
+    `3⃣Lakukan pembayaran\n` +
+    `4⃣Kirim bukti transfer ke admin\n` +
     `─────────────────────────\n` +
     `⚡ Proses: *1–15 menit* setelah pembayaran\n` +
     `📞 Hubungi admin: wa.me/${NO_ADMIN}`
